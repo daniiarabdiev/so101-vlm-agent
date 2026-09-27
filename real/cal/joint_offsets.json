@@ -1,0 +1,19 @@
+{
+ "offsets_deg": [
+  0.0,
+  -2.276,
+  -7.288,
+  -3.743,
+  0.0
+ ],
+ "order": [
+  "shoulder_pan",
+  "shoulder_lift",
+  "elbow_flex",
+  "wrist_flex",
+  "wrist_roll"
+ ],
+ "source": "real/cal/full_20260927c.json",
+ "model": "kin3",
+ "meaning": "model joint = real reading + offset"
+}

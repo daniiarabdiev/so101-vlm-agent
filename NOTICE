@@ -1,0 +1,10 @@
+SO-101 VLM Agent
+Copyright 2026 The SO-101 VLM Agent authors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This repository includes the SO-101 MuJoCo robot model in so101_vlm/assets/so101/, which is licensed under the
+Apache License, Version 2.0; see so101_vlm/assets/so101/LICENSE and so101_vlm/assets/so101/PROVENANCE.md.
+
+The photoreal renderer downloads CC0 assets from Poly Haven at run time (run3/phase2_photoreal/assets_manifest.json);
+they are not included here.

@@ -1,0 +1,13 @@
+# Core (simulator, agent loop, real-arm adapter). Tested with Python 3.12 and the versions below.
+numpy>=2.0        # tested 2.5.3
+scipy>=1.12       # tested 1.18.1
+mujoco>=3.2       # tested 3.12.0
+opencv-python>=4.10   # tested 5.0.0
+pillow>=10        # tested 12.3.0
+httpx>=0.27       # tested 0.28.1
+
+# Optional
+# LoRA training (on a GPU machine): torch, transformers, peft, flash-linear-attention
+# Photoreal rendering server: Blender's Python (bpy) on a GPU machine, see run8/env/blender_server.py
+# macOS camera server (real/cam_server.py): pyobjc-framework-AVFoundation
+# Real-arm driver (real/arm_server.py): an SO-101 follower driver exposing so101_twin.hardware.CommandFollower, see docs/REAL_ARM.md

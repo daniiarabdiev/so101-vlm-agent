@@ -1,0 +1,29 @@
+{
+ "note": "plane check disabled: the touch data was noisy (2 cm spread; the fitted wall put the rest pose inside it) and the right wall was not recorded (USB drop). Pan limits (-40 left, +53 right) keep the arm off the walls instead.",
+ "planes": [],
+ "margin_m": -0.02,
+ "fit": [
+  {
+   "n": [
+    0.6225,
+    -0.7826
+   ],
+   "d": -0.0644,
+   "side": "pan<0",
+   "touches": 10,
+   "spread_mm": 20.0
+  }
+ ],
+ "planes_measured_but_unreliable": [
+  {
+   "n": [
+    0.6225,
+    -0.7826
+   ],
+   "d": -0.0644,
+   "side": "pan<0",
+   "touches": 10,
+   "spread_mm": 20.0
+  }
+ ]
+}

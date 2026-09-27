@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+MUJOCO_LOG.TXT
+# run outputs, ledgers and recordings
+real/runs/*
+!real/runs/.gitkeep
+run5/budget/*.jsonl
+*.mp4
+# model weights live on Hugging Face
+*.safetensors
+# LaTeX build files
+docs/paper/*.aux
+docs/paper/*.log
+docs/paper/*.out
+docs/paper/*.pdf
