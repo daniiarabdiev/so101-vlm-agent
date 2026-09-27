@@ -10,7 +10,8 @@ On a real SO-101 on a home desk with three consumer cameras, one typed command, 
 then put the yellow ball in the square container"*, completed in 104 seconds.
 
 - **Model:** [squiredaniiar/so101-vlm-agent](https://huggingface.co/squiredaniiar/so101-vlm-agent), a LoRA adapter for Qwen3.8-27B (Apache-2.0)
-- **Write-up:** blog post and paper forthcoming
+- **Write-up:** [robopsychologist.ai/so101-vlm-agent](https://robopsychologist.ai/so101-vlm-agent) (videos, an interactive walk-through of a run, charts); paper on arXiv soon
+- **Every real run:** [`results/real_runs.jsonl`](results/real_runs.jsonl), one line per run with the command, timings and the verdict judged from the recordings
 
 ## How it works
 
