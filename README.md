@@ -9,7 +9,7 @@ on simulated SO-101 episodes in MuJoCo: no teleoperation and no real-world train
 On a real SO-101 on a home desk with three consumer cameras, one typed command, *"put the blue ball in the square container,
 then put the yellow ball in the square container"*, completed in 104 seconds.
 
-- **Model:** LoRA adapter for Qwen3.8-27B on Hugging Face (link in the model section below)
+- **Model:** [squiredaniiar/so101-vlm-agent](https://huggingface.co/squiredaniiar/so101-vlm-agent), a LoRA adapter for Qwen3.8-27B (Apache-2.0)
 - **Write-up:** blog post and paper forthcoming
 
 ## How it works
@@ -83,7 +83,8 @@ python -m real.run_real "" --backend sim --sim-task place_in --sim-seed 60000 --
 ## Running the model
 
 Serve the base model with the adapter using vLLM on one GPU (we used an H100; see `run8/pods/start_model8.sh` for the exact
-flags: FP8, CUDA graphs, `--enable-lora --lora-modules run7-v4=<adapter dir>`). The client reads the server's API key from
+flags: FP8, CUDA graphs, `--enable-lora --lora-modules run7-v4=<adapter dir>`). Download the adapter with
+`hf download squiredaniiar/so101-vlm-agent --local-dir lora_v4`. The client reads the server's API key from
 `~/.config/runpod/so101-run3-vllm-key` or the file named by `RUN3_KEY_FILE`. Then run the agent against the simulated arm:
 
 ```sh
